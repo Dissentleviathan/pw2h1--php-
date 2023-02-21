@@ -20,12 +20,27 @@
 
     echo "<br/>";
     echo "Nama : ".$nama."<br/>";
-    echo "NPM : ".$npm."<br/>";
-    echo "Jenis Kelamin : ".$jk."<br/>";
-    echo "Umur : ".$umur."<br/>";
+    echo "NPM : $npm <br/>";
+    echo "Jenis Kelamin : $jk <br/>";
+    echo "Umur : $umur <br/>";
     echo "Berat : ".$berat."<br/>";
     echo "Tinggi : ".$tinggi."<br/>";
 
+    $kode_prodi = substr($npm, 4, 2);
+    $prodi = "";
+    if ($kode_prodi == "25") {
+        $prodi = "Informatika";
+    } elseif ($kode_prodi == "24") {
+        $prodi = "Sistem Informasi";
+    } elseif ($kode_prodi == "27") {
+        $prodi = "Teknik Elektro";
+    } elseif ($kode_prodi == "20") {
+        $prodi = "Manajemen";
+    } elseif ($kode_prodi == "21") {
+        $prodi = "Akutansi";
+    }
+
+    echo "Prodi : $prodi";
     
 
 ?>
