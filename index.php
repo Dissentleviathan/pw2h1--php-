@@ -1,6 +1,6 @@
 <?php
     // Ini adalah perintah untuk mencetak ke layar halaman.
-    echo "Hello World!";
+    echo "<h1> BIODATA SAYA </h1>";
 
     /*
         o> Ini adalah deklarasi variabel dengan tipe data.
